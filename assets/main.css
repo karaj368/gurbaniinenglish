@@ -38,11 +38,9 @@ body {
 .bg-gradient {
   background-image: linear-gradient(90deg, hsl(32 95% 44%), hsl(45 95% 50%));
 }
-section{
+.innerpage-section{
   padding: 3rem 0;
 }
-
-
 .first-section-top {
     margin-top: 60px;
 }
@@ -79,7 +77,6 @@ section{
   font-weight: 700;
   margin-bottom: 15px;
 }
-
 .section-subheading{
   font-size: 18px;
   color: hsl(25 15% 42% / 1);
@@ -142,6 +139,9 @@ section{
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
+
+
+
 .main-banner {
   background-image: linear-gradient(to right, rgba(1, 37, 78, 0.844), rgba(0, 0, 255, 0)), url(../assets/images/golden-temple-bg.jpg); 
   background-position: center center;
@@ -153,6 +153,10 @@ section{
 .banner-heading{
   font-size: 62px;
   line-height: 1.1em;
+}
+
+.sacred{
+  padding: 6rem 0.5rem;
 }
 .icon-box{
   width: 80px;
@@ -215,6 +219,9 @@ section{
   background-image: linear-gradient(90deg, hsl(45 95% 50%), hsl(32 95% 44%));
 }
 /* inner page design */
+.tiles-grid{
+  padding-bottom: 6rem;
+}
 .tile-box{
   padding: 30px 20px;
   background-color: #fff;
@@ -241,6 +248,9 @@ section{
 }
 .tile-box-content h3{
  font-size: 18px;
+}
+.tile-box:hover .tile-box-content h3{
+  color: hsl(32 95% 44%);
 }
 .tile-box-content p{
  font-size: 14px;
