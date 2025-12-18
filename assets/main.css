@@ -95,6 +95,14 @@ body {
   font-weight: 700;
   line-height: 1.4em;
 }
+.supsub-heading sub, .supsub-heading sup{
+background-image: linear-gradient(90deg, hsl(32 95% 44%), hsl(45 95% 50%));
+ color: transparent !important;
+  background-clip: text;
+}
+.supsub-heading svg{
+  color: hsl(32 95% 44%)!important;
+}
 .innerpage-p {
     font-size:20px;
     color: #847062;
@@ -139,8 +147,6 @@ body {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
-
-
 
 .main-banner {
   background-image: linear-gradient(to right, rgba(1, 37, 78, 0.844), rgba(0, 0, 255, 0)), url(../assets/images/golden-temple-bg.jpg); 
@@ -228,10 +234,15 @@ body {
   border: 1px solid #e7e3da;
   border-radius: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      height: 100%;
 }
-.tile-box:hover{
-  border: 1px solid #db77064d;
-  cursor: pointer;
+.tile-box.gurus{
+ padding: 25px 15px;
+}
+.tile-box:hover {
+    border: 1px solid #db77064d;
+    cursor: pointer;
+    box-shadow: #db77064d 0px 1px 10px 2px, rgba(60, 64, 67, 0.15) 0px 1px 5px 1px;
 }
 .tile-box-header{
   margin-bottom: 20px;
@@ -266,6 +277,28 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
+.tile-box-content.gurus-page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tile-box-content.gurus-page h4 {
+    font-size: 16px;
+    font-weight: 600;
+   color: #847062;
+}
+.tile-box-content.gurus-page h3 {
+    font-size: 20px;
+    color: hsl(32 95% 44%);
+    font-weight: 700;
+}
+.tile-box-content.gurus-page p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin: 0px;
+} 
 .tile-box-btn:hover{
   background-color: hsl(32, 93%, 49%);
 }
@@ -277,8 +310,8 @@ body {
   padding: 3px 10px;
   border-radius: 50px;
   font-size: 12px;
-  color: #847062;
-  font-weight: 700;
+  color: #000;
+  font-weight: 600;
 }
 
 /* Footer */
