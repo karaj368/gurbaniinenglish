@@ -321,6 +321,20 @@ background-image: linear-gradient(90deg, hsl(32 95% 44%), hsl(45 95% 50%));
   background-color: hsl(32, 93%, 49%);
 }
 
+.line-by-line-page{
+  background-image: hsl(32 95% 44% / .05), hsl(42 25% 92% / .05);
+background-color: #fff;}
+
+.line-by-line-page h4{
+  font-size: 16px;
+  font-weight: 600;
+}
+.line-by-line-page p{
+  font-size: 14px;
+  color: #847062;
+  line-height: 1.5rem;
+}
+
 .footer-tag-list{
   display: inline-block;
   background: transparent;
