@@ -41,13 +41,13 @@
 //       });
 //     });
 // // pop up modal js
-//      document.querySelectorAll("[data-modal]").forEach(span => {
-//       span.addEventListener("click", function () {
-//         let modalId = this.getAttribute("data-modal");
-//         let modal = new bootstrap.Modal(document.getElementById(modalId));
-//         modal.show();
-//       });
-//     });
+     document.querySelectorAll("[data-modal]").forEach(span => {
+      span.addEventListener("click", function () {
+        let modalId = this.getAttribute("data-modal");
+        let modal = new bootstrap.Modal(document.getElementById(modalId));
+        modal.show();
+      });
+    });
 
 document.addEventListener("scroll", function () {
   const header = document.getElementById("siteHeader");
